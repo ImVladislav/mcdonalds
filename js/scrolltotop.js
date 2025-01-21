@@ -41,7 +41,7 @@ musicButton.addEventListener('click', () => {
     if (audio.paused) {
         audio.play();
         isPlaying = true;
-        musicButton.innerHTML = "🔊"; // Змінити іконку, якщо потрібно
+        musicButton.innerHTML = "🎵"; // Змінити іконку, якщо потрібно
     } else {
         audio.pause();
         isPlaying = false;

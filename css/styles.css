@@ -1219,7 +1219,7 @@ body{
     }
 
     #exchanges ul li{
-        flex: 0 1 calc(33.333% - 20px);
+        /* flex: 0 1 calc(33.333% - 20px); */
     }
 
     .htb{
