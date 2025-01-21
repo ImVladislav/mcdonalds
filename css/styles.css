@@ -1,0 +1,1420 @@
+@font-face {
+    font-family: 'HaroldFont';
+    src: url('../fonts/junegull-rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HaroldFont2';
+    src: url('../fonts/KatahdinRound-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    font-family: 'HaroldFont2', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100%;
+    height:100%;
+    -webkit-font-smoothing: antialiased; /* Smooths the edges of fonts */
+    -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+}
+
+text{
+    font-family: 'HaroldFont', sans-serif;
+}
+
+h1{
+    font-family: 'HaroldFont2', sans-serif;
+}
+
+body{
+    max-width: 100%;
+    min-height: 100%;
+    height:100%;
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #38A6DF;
+}
+
+#startcontent{
+    position: relative;
+    padding-top: 80px; /* Adjust based on the height of #navbar */
+    background-image: url(../img/Background/Matiz_Saturacao-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    width: 100%;
+    min-height: 100%;
+}
+
+#maincontent{
+    max-width: 100%;
+    min-height: 100vh;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bkg{
+    background-color: #fbdb2c;
+    border: 3px solid black;
+    border-radius: 22px;
+    box-shadow: inset 5px -8px 5px rgb(205 123 38);
+}
+
+.imgbkg{
+    background-image: url(../img/Background/Efeito.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.content{
+    max-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2; /* Keep div1 and div3 below div2 */
+}
+
+.content img{
+    max-width: 100%; /* Scale down to fit the width of the container */
+    height: auto;    /* Maintain the aspect ratio */
+    display: block;
+}
+
+.headers{
+    fill: #fbdb2c; /* Inner text color */
+    stroke: black; /* Border color */
+    stroke-width: 2; /* Border thickness */
+    dominant-baseline: middle; /* Align vertically */
+    text-anchor: middle; /* Align horizontally */
+}
+
+
+/* Banner Styles */
+#banner{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#bannerimg{
+    justify-items: center;
+}
+
+#bannerimg picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bannerbtns{
+    display: flex;
+}
+
+#bannerbtns > div{
+}
+
+
+
+/* About Us Styles */
+#aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutus p{
+    color: #FFF;
+}
+
+#aboutus h1{
+    font-size: 4rem;
+    color: #fbdb2c; /* Text color */
+    text-align: center; /* Optional: Center align */
+}
+
+#aboutus img{
+    width: 100%;
+}
+
+/* Exchanges Styles */
+#exchanges{
+    display: flex;
+    flex-direction: column;
+}
+
+#exchanges ul{
+    font-size: 3rem;
+}
+
+#exchanges ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#exchanges ul li{
+    height: 20vh;
+    background-color: #fbdb2c;
+    border: 3px solid black;
+    border-radius: 25px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* How to Buy Styles */
+#howtobuy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#howtobuy h1{
+    color:#fbdb2c;
+}
+
+#howtobuy p{
+    color: #FFF;
+}
+
+#htb-container {
+    position: relative;
+    /* The height of this container will be equal to the total height of the 4 .htb rows. */
+}
+
+#htb-line {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 100%;
+    background: black;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+
+/* The ::after element will represent the #fbdb2c progress filling the line */
+.htb-line-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 0%; /* Will animate this */
+    background: #fbdb2c;
+    z-index: 2;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#htb-arrow-1,#htb-arrow-2,#htb-arrow-3,#htb-arrow-4{
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.htb-arrow {
+    background: #fbdb2c;
+    color: #000000;
+    border-radius: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Arrow icon inside the circle */
+.htb-arrow i {
+    font-size: 20px;
+}
+
+.htb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.htbimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbdb2c;
+    border: 3px solid black;
+    border-radius: 22px;
+    box-shadow: inset 5px -8px 5px rgb(205 123 38);
+}
+
+#howtobuy img{
+    height: auto;
+    border-radius: 22px;
+    
+}
+
+/* Tokenomics Styles */
+#tokenomics{
+
+}
+
+#tokenomicsContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+#t2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#t2 > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 95%;
+}
+
+#t2 > div > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#t2 p{
+    word-wrap: break-word; /* Force breaking long words */
+    overflow: hidden; /* Hide any overflowing content */
+    white-space: normal; /* Allow text to wrap normally */
+}
+
+#copy img{
+    width: 25%;
+}
+
+#t3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+}
+
+#t3 > div{
+    width: 50%;
+}
+
+#t3 img{
+    width: 75%;
+}
+
+/* Sticker Pack Styles */
+#stickerpack{
+
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fbdb2c; /* Yellow background */
+    color: #000; /* Black arrow color */
+    border: 2px solid #000; /* Optional: border */
+    border-radius: 50%; /* Circle shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.back-to-top:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fbdb2c; /* Yellow arrow on hover */
+}
+
+@media(min-width: 230px){
+    html{
+        font-size: 12px;
+    }
+
+    /* SVG Headers */
+    #h_aboutus, #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 6rem;
+    }
+
+    /* Styles for >=320px screens */
+    .content{
+        padding:0 15px 50px 15px;
+    }
+
+    .content > div{
+        padding:15px 0 15px 0;
+    }
+
+    #maincontent{
+        padding-top: 150px;
+    }
+
+    /* BANNER STYLES */
+    #banner{
+        width: 85%;
+        padding: 0 7.5% 0 7.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+
+    /* About Us Styles */
+    #aboutus{
+        flex-direction: column;
+    }
+
+    #aboutus > div{
+        width: 75%;
+        padding: 0 20px 0 20px;
+    }
+
+    /* Exchanges Styles*/
+
+    #exchanges ul {
+        gap: 50px;
+        margin: 15%;
+    }
+
+    #exchanges ul li{
+        width: 75%;
+        flex: 0 1 calc(100% - 10px);
+    }
+
+    #exchanges img{
+        width: 75%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+    /* How to Buy Styles */
+    #htb-line,
+    .htb-arrow {
+        display: none;
+    }
+    .htb{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .htbimg {
+        padding: 0;
+    }
+
+    .htb > div{
+        width: 75%;
+        margin: 25px;
+    }
+
+    /* Tokenomics Styles */
+    #tokenomicsContent {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #tokenomicsContent > div {
+        width: 75%;
+        padding: 20px 0 20px 
+    }
+
+    #t2 > div{
+        margin: 20px 0 20px 0;
+    }
+
+    #t2 > div > div{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 75%;
+    }
+
+    #t2 p{
+        font-size: 1rem;
+    }
+
+    #gallery3{
+        display: none;
+    }
+}
+
+/* From 320px and up - covers legacy small smartphones (old iPhones, etc.) */
+@media (min-width: 320px) {
+    html{
+        font-size: 12px;
+    }
+
+    /* SVG Headers */
+    #h_aboutus, #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 6rem;
+    }
+
+    /* Styles for >=320px screens */
+    .content{
+        padding:0 15px 50px 15px;
+    }
+
+    .content > div{
+        padding:15px 0 15px 0;
+    }
+
+    #maincontent{
+        padding-top: 150px;
+    }
+
+    /* BANNER STYLES */
+    #banner{
+        width: 85%;
+        padding: 0 7.5% 0 7.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+
+    /* About Us Styles */
+    #aboutus{
+        flex-direction: column;
+    }
+
+    #aboutus > div{
+        width: 75%;
+        padding: 0 20px 0 20px;
+    }
+
+    /* Exchanges Styles*/
+
+    #exchanges ul {
+        gap: 50px;
+        margin: 15%;
+    }
+
+    #exchanges ul li{
+        width: 75%;
+        flex: 0 1 calc(100% - 10px);
+    }
+
+    #exchanges img{
+        width: 75%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+    /* How to Buy Styles */
+    #htb-line,
+    .htb-arrow {
+        display: none;
+    }
+    .htb{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .htbimg {
+        padding: 0;
+    }
+
+    .htb > div{
+        width: 75%;
+        margin: 25px;
+    }
+
+    /* Tokenomics Styles */
+    #tokenomicsContent {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #tokenomicsContent > div {
+        width: 75%;
+        padding: 20px 0 20px 
+    }
+
+    #t2 > div{
+        margin: 20px 0 20px 0;
+    }
+
+    #t2 > div > div{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 75%;
+    }
+
+    #t2 p{
+        font-size: 1rem;
+    }
+}
+  
+/* From 360px and up - extremely common Android phone width */
+@media (min-width: 360px) {
+}
+
+/* From 375px and up - standard iPhone sizes */
+@media (min-width: 375px) {
+    /* SVG Headers */
+    #h_aboutus,#h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 5.75rem;
+    }
+
+    /* BANNER STYLES */
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+    #aboutus{
+        flex-direction: column;
+    }
+
+    #aboutus > div{
+        width: 75%;
+        padding: 0 20px 0 20px;
+    }
+
+    #exchanges ul {
+        gap: 50px;
+        margin: 15%;
+    }
+
+    #exchanges ul li{
+        width: 75%;
+        flex: 0 1 calc(100% - 10px);
+    }
+
+    #exchanges img{
+        width: 75%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+
+    .htb{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .htbimg {
+        padding: 0;
+    }
+
+    .htb > div{
+        width: 75%;
+        margin: 25px;
+    }
+
+}
+
+/* From 390px and up - newer iPhones and foldable covers */
+@media (min-width: 390px) {
+
+    /* SVG Headers */
+    #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 5.5rem;
+    }
+
+    /* BANNER STYLES */
+    #banner{
+        width: 85%;
+        padding: 0 7.5% 0 7.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+    #aboutus{
+        flex-direction: column;
+    }
+
+    #aboutus > div{
+        width: 75%;
+        padding: 0 20px 0 20px;
+    }
+
+    #exchanges ul {
+        gap: 50px;
+        margin: 15%;
+    }
+
+    #exchanges ul li{
+        width: 75%;
+        flex: 0 1 calc(100% - 10px);
+    }
+
+    #exchanges img{
+        width: 75%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+
+    .htb{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .htbimg {
+        padding: 0;
+    }
+
+    .htb > div{
+        width: 75%;
+        margin: 25px;
+    }
+
+}
+
+/* From 414px and up - older Plus/Max iPhones 
+    You could also jump directly to 428px to cover the latest largest iPhones */
+@media (min-width: 414px) {
+    html{
+        font-size: 12px;
+    }
+
+    /* SVG Headers */
+    #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 5.5rem;
+    }
+
+    .content{
+        padding:0 20px 75px 20px;
+    }
+
+    .content > div{
+        padding: 20px 0 20px 0;
+    }
+
+    #maincontent{
+        padding-top: 150px;
+    }
+
+    /* BANNER STYLES */
+    #banner{
+        width: 75%;
+        padding: 0 12.5% 0 12.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+    #aboutus{
+        flex-direction: column;
+    }
+
+    #aboutus > div{
+        width: 75%;
+        padding: 0 20px 0 20px;
+    }
+
+    #exchanges ul {
+        gap: 50px;
+        margin: 15%;
+    }
+
+    #exchanges ul li{
+        width: 75%;
+        flex: 0 1 calc(100% - 10px);
+    }
+
+    #exchanges img{
+        width: 75%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+
+    .htb{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .htbimg {
+        padding: 0;
+    }
+
+    .htb > div{
+        width: 75%;
+        margin: 25px;
+    }
+
+}
+
+/* From 428px and up - largest modern iPhone Max/Plus models */
+@media (min-width: 428px) {
+    html{
+        font-size: 12px;
+    }
+
+    /* SVG Headers */
+    #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 5.75rem;
+    }
+
+    .content{
+        padding:0 25px 75px 25px;
+    }
+
+    .content > div{
+        padding: 25px 0 25px 0;
+    }
+    
+    .hover-effect:hover,
+    .hover-effect:focus {
+        transform: scale(1); /* Enlarge the element by 20% */
+    }
+
+    #maincontent{
+        padding-top: 150px;
+    }
+
+    /* BANNER STYLES */
+    #banner{
+        width: 75%;
+        padding: 0 12.5% 0 12.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+    #aboutus{
+        flex-direction: column;
+    }
+
+    #aboutus > div{
+        width: 75%;
+        padding: 0 20px 0 20px;
+    }
+
+    #exchanges ul {
+        gap: 50px;
+        margin: 15%;
+    }
+
+    #exchanges ul li{
+        width: 75%;
+        flex: 0 1 calc(100% - 10px);
+    }
+
+    #exchanges img{
+        width: 75%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+
+    .htb{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .htbimg {
+        padding: 0;
+    }
+
+    .htb > div{
+        width: 75%;
+        margin: 25px;
+    }
+}
+
+/* From 600px and up - foldable main displays or small tablets */
+@media (min-width: 600px) {
+    html{
+        font-size: 14px;
+    }
+
+    /* SVG Headers */
+    #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 5rem;
+    }
+
+    .content{
+        padding:0 5% 100px 5%;
+    }
+
+    .content > div{
+        padding:25px 0 25px 0;
+    }
+    
+    .hover-effect:hover,
+    .hover-effect:focus {
+        transform: scale(1); /* Enlarge the element by 20% */
+    }
+
+    #maincontent{
+        padding-top: 100px;
+    }
+
+    /* BANNER STYLES */
+    #banner{
+        width: 75%;
+        padding: 0 12.5% 0 12.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+    #aboutus{
+        flex-direction: column;
+    }
+
+    #aboutus > div{
+        width: 75%;
+        padding: 0 20px 0 20px;
+    }
+
+    #exchanges ul {
+        gap: 50px;
+        margin: 15%;
+    }
+
+    #exchanges ul li{
+        width: 75%;
+        flex: 0 1 calc(100% - 10px);
+    }
+
+    #exchanges img{
+        width: 75%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+    #howtobuy .htb:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    #htb-line,
+    .htb-arrow {
+        display: flex;
+    }
+
+    .htb{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Left and right columns push apart, leaving a gap */
+        align-items: center;
+        margin: 25px 0; /* Adjust vertical spacing as needed */
+        position: relative; /* So .htb-arrow can position correctly if inside */
+        margin: 50px 0; /* Increase margin to give space */
+    }
+
+    .htb > div {
+        width: 35%;
+        margin: 0; /* Remove large margins to prevent them intruding on the gap */
+        box-sizing: border-box;
+    }
+
+    .htbimg {
+        padding: 0;
+    }
+
+    .htb > div{
+        width: 75%;
+        margin: 25px;
+    }
+
+    #t2 p{
+        font-size: 1.5rem;
+    }
+
+}
+
+/*From 769px and up - tablet sizes and up  */
+@media(min-width: 769px){
+    /* SVG Headers */
+    #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 4rem;
+    }
+
+    .content{
+        padding: 0 10% 125px 10%;
+    }
+
+    .content > div{
+        padding:0 25px 0 25px;
+    }
+
+    .hover-effect {
+        transition: transform 0.3s ease; /* Smooth animation for enlargement */
+    }
+    
+    .hover-effect:hover,
+    .hover-effect:focus {
+        transform: scale(1.25); /* Enlarge the element by 20% */
+    }
+
+    #maincontent{
+        padding-top: 150px;
+    }
+
+    /* BANNER STYLES */
+    #banner{
+        width: 45%;
+        padding: 0 27.5% 0 27.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+    #aboutus{
+        flex-direction: row;
+    }
+
+    #aboutus > div{
+        width: 50%;
+        padding: 0 20px 0 20px;
+    }
+
+    #exchanges ul {
+        gap: 30px;
+        margin:0;
+    }
+
+    #exchanges ul li{
+        flex: 0 1 calc(50% - 30px);
+    }
+
+    #exchanges img{
+        width: 85%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+
+    .htbimg {
+        padding: 50px;
+    }
+
+    .htb{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Left and right columns push apart, leaving a gap */
+        align-items: center;
+        margin: 25px 0; /* Adjust vertical spacing as needed */
+        position: relative; /* So .htb-arrow can position correctly if inside */
+    }
+
+    .htb > div {
+        width: 35%;
+        margin: 0; /* Remove large margins to prevent them intruding on the gap */
+        box-sizing: border-box;
+    }
+
+    #tokenomicsContent {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    #tokenomicsContent > div {
+        width: 50%;
+    }
+
+    #t2 > div{
+        margin: 15px 0 15px 0;
+    }
+
+    #t2 > div > div{
+        padding-left: 25px;
+        padding-right: 25px;
+        width:80%;
+    }
+
+    #t2 p{
+        font-size: 1.25rem;
+    }
+
+    #gallery3{
+        display: block;
+    }
+}
+
+/* Desktop, small screens 720p*/
+@media(min-width: 1025px){
+    html{
+        font-size: 16px;
+    }
+
+    /* SVG Headers */
+    #h_aboutus, #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 4.5rem;
+    }
+
+    .content{
+        padding: 0 15% 150px 15%;
+    }
+
+    .content > div{
+        padding:0 50px 0 50px;
+    }
+
+    #maincontent{
+        padding-top: 150px;
+    }
+
+    /* Banner Styles */
+    #banner{
+        width: 45%;
+        padding: 0 27.5% 0 27.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+    #aboutus{
+        flex-direction: row;
+    }
+
+    #aboutus > div{
+        width: 50%;
+        padding: 0 20px 0 20px;
+    }
+
+    #exchanges img{
+        width: 85%; /* Scale images to fit their container */
+        height: auto; /* Maintain aspect ratio */
+        padding:15px;
+    }
+
+    #exchanges ul {
+        gap: 20px;
+    }
+
+    #exchanges ul li{
+        flex: 0 1 calc(33.333% - 20px);
+    }
+
+    .htb{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Left and right columns push apart, leaving a gap */
+        align-items: center;
+        margin: 25px 0; /* Adjust vertical spacing as needed */
+        position: relative; /* So .htb-arrow can position correctly if inside */
+    }
+
+    .htb > div {
+        width: 37.5%;
+        margin: 0; /* Remove large margins to prevent them intruding on the gap */
+        box-sizing: border-box;
+    }
+
+    .htbimg {
+        padding: 50px;
+    }
+
+    #tokenomicsContent {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    #tokenomicsContent > div {
+        width: 50%;
+    }
+
+    #t2 > div{
+        margin: 15px 0 15px 0;
+    }
+
+    #t2 > div > div{
+        padding-left: 25px;
+        padding-right: 25px;
+        width:80%;
+    }
+
+    #t2 p{
+        font-size: 1.25rem;
+    }
+
+}
+
+/* Extra large screens, 1080p */
+@media(min-width: 1200px){
+    html{
+        font-size: 18px;
+    }
+
+    /* SVG Headers */
+    #h_exchanges, #h_howtobuy, #h_tokenomics, #h_stickerpack{
+        font-size: 3.5rem;
+    }
+
+    .content{
+        padding: 0 20% 150px 20%;
+    }
+
+    .content > div{
+        padding:0 50px 0 50px;
+    }
+
+    #maincontent{
+        padding-top: 150px;
+    }
+
+    /* Banner Styles */
+    #banner{
+        width: 35%;
+        padding: 0 32.5% 0 32.5%;
+    }
+    
+    #bannerimg{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #bannerbtns{
+        width: 75%;
+        padding: 20px 12.5% 20px 12.5%;
+    }
+    
+    #bannerbtns > div{
+        width:50%;
+        padding: 0 10px 0 10px;
+    }
+
+    .htb{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Left and right columns push apart, leaving a gap */
+        align-items: center;
+        margin: 25px 0; /* Adjust vertical spacing as needed */
+        position: relative; /* So .htb-arrow can position correctly if inside */
+    }
+
+    .htb > div {
+        width: 40%;
+        margin: 0; /* Remove large margins to prevent them intruding on the gap */
+        box-sizing: border-box;
+    }
+
+    .htbimg {
+        padding: 50px;
+    }
+
+
+    #tokenomicsContent {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    #tokenomicsContent > div {
+        width: 50%;
+    }
+
+    #t2 > div{
+        margin: 15px 0 15px 0;
+    }
+
+    #t2 > div > div{
+        padding-left: 25px;
+        padding-right: 25px;
+        width:80%;
+    }
+
+    #t2 p{
+        font-size: 1.25rem;
+    }
+
+}
+
+/* окремо */
+
+/* Стилі модального вікна */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #ffcc00;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+    background-color: #0056b3;
+}
+
+/* Стилі кнопки для музики */
+.music-button {
+    z-index: 500;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.music-button:hover {
+    transform: scale(1.1);
+    background-color: #ffb700;
+}

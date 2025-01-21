@@ -1,0 +1,371 @@
+/* Navbar Styles */
+.navbar{
+    display: flex;
+    justify-content: center;
+    font-family: 'HaroldFont', sans-serif;
+}
+
+.navbar > div{
+    min-height: 80px;
+    transition: min-height 1s ease;
+
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar img{
+    height: 100%;
+    width: auto;    
+    display: block;
+}
+
+#navbar{
+    display: flex; 
+    align-items: flex-start;
+    width:100%;
+    box-sizing: border-box;
+    position: absolute; /* Or fixed, depending on behavior */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+#logo{
+    height: 86px;
+    flex-shrink: 0;
+}
+
+#navlinks{
+    display: flex;
+    flex: 1; /* Allows this div to grow and fill remaining space */
+    max-width: 560px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #fbdb2c;
+    border: 3px solid black;
+    border-radius: 22px;
+    box-shadow: inset 5px -8px 5px rgb(205 123 38);
+    box-sizing: border-box;
+}
+
+#socials{
+    flex: 0 0 10%; 
+}
+
+#socials > div{
+    width: 60px;
+    height: 80px;
+    display: flex;
+    background-color: #fbdb2c;
+    border: 3px solid black;
+    border-radius: 22px;
+    box-shadow: inset 5px -8px 5px rgb(205 123 38);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#mobilenavlinks{
+    background-color: #fbdb2c;
+    border: 3px solid black;
+    border-radius: 22px;
+    box-shadow: inset 5px -8px 5px rgb(205 123 38);
+}
+
+/* Base styles for the menu toggle */
+.menu-toggle {
+    width: 40px; /* Width of the button */
+    height: 30px; /* Height of the button */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between lines */
+    cursor: pointer;
+    position: relative;
+}
+
+/* Lines of the menu toggle */
+.menu-toggle span {
+    display: block;
+    height: 5px; /* Thickness of the lines */
+    background-color: black; /* Color of the lines */
+    border-radius: 5px; /* Round edges */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animations */
+}
+
+/* Active state: Transform lines to form an "X" */
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg); /* Top line rotates */
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0; /* Middle line disappears */
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg); /* Bottom line rotates */
+}
+
+/* Mobile Nav 1700 931
+Mobile phones Samsung+ - Ultra*/
+@media(min-width: 230px){
+    #mobilemenubtn{
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .navbar{
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        font-size: 2.5rem;
+    }
+
+    .navbar ul li{
+        height:45px;
+    }
+
+    #msocialx svg, #msocialtg svg,#msocialtk svg{
+        width: 1.5em;
+        height: 1.5em;
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+
+    #navlinks{
+        flex-direction: column;
+    }
+
+    #navbar > div{
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #logo,#socials{
+        display: none;
+    }
+    
+    #msocials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #msocialx, #msocialtg,#msocialtk{
+        display: flex;
+    }
+
+    #socials > div{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+}
+
+/* From 320px and up - covers legacy small smartphones (old iPhones, etc.) */
+@media (min-width: 320px) {
+    #mobilemenubtn{
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .navbar{
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        font-size: 2.5rem;
+    }
+
+    .navbar ul li{
+        height:45px;
+    }
+
+    #msocialx svg, #msocialtg svg,#msocialtk svg{
+        width: 1.5em;
+        height: 1.5em;
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+
+    #navlinks{
+        flex-direction: column;
+    }
+
+    #navbar > div{
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #logo,#socials{
+        display: none;
+    }
+    
+    #msocials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #msocialx, #msocialtg,#msocialtk{
+        display: flex;
+    }
+
+    #socials > div{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+}
+  
+/* From 360px and up - extremely common Android phone width */
+@media (min-width: 360px) {
+
+}
+
+/* From 375px and up - standard iPhone sizes */
+@media (min-width: 375px) {
+
+}
+
+/* From 390px and up - newer iPhones and foldable covers */
+@media (min-width: 390px) {
+
+}
+
+/* From 414px and up - older Plus/Max iPhones 
+    You could also jump directly to 428px to cover the latest largest iPhones */
+@media (min-width: 414px) {
+
+}
+
+/* From 428px and up - largest modern iPhone Max/Plus models */
+@media (min-width: 428px) {
+
+}
+
+/* From 600px and up - foldable main displays or small tablets */
+@media (min-width: 600px) {
+
+    #logo{
+        display: block;
+    }
+
+    .navbar > div{
+        
+    }
+
+    .navbar ul{
+        font-size: 2rem;
+    }
+
+    #msocialx, #msocialtg, #msocialtk{
+        display: none;
+    }
+
+    #socials svg{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+
+
+    #socials{
+        display: flex;
+    }
+
+    #socials > div{
+        margin: 0 5px 0 5px;
+    }
+
+
+}
+
+/* Desktop Nav 
+Small screens, laptops */
+@media(min-width: 769px){
+    #mobilemenubtn{
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+    }
+
+    #navlinks{
+        flex-direction: row;
+    }
+
+    #navbar{
+        align-items: stretch; /* Ensure children stretch vertically (default for Flexbox) */
+        padding-left: 20px; /* Padding for left side (div1) */
+        padding-right: 20px; /* Padding for right side (div3) */
+        gap: 20px; /* Space between child divs */
+    }
+
+    #navbar > div{
+        padding: 0 15px 0 15px;
+        margin-left: 0; 
+        margin-right: 0;
+    }
+
+    #socials > div{
+        padding: 0 5px 0 5px;
+    }
+}
+
+/* Desktop, large screens 720p*/
+@media(min-width: 1025px){
+    #navbar > div{
+        padding: 0 25px 0 25px;
+    }
+    #socials > div{
+        padding: 0 10px 0 10px;
+    }
+}
+
+/* Extra large screens, 1080p */
+@media(min-width: 1200px){
+
+}
+
+

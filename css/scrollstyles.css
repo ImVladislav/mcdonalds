@@ -1,0 +1,143 @@
+/* General styles for both containers */
+.scroll-container {
+    width: 99%;
+    font-family: 'HaroldFont', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 3px solid black;
+    transform-origin: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+/* First container */
+.first-container {
+    background-color: #fbdb2c; /* Background color */
+    transform: rotate(-2deg); /* Slight counterclockwise rotation */
+}
+
+/* Second container */
+.second-container {
+    background-color: #FFF4B9; /* Slightly different background color */
+    transform: rotate(2deg); /* Slight clockwise rotation */
+}
+
+/* Scrolling text inside the containers */
+.scroll-text {
+    display: inline-block;
+    font-size: 2rem; /* Text size */
+    color: #000; /* Black text color */
+    line-height: 55px; /* Center text vertically */
+    animation: scroll-horizontal 30s linear infinite; /* Seamless infinite scroll */
+}
+
+/* Keyframes for text scrolling */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* Scroll to the left */
+    }
+}
+
+@media(min-width: 230px){
+    .scroll-container {
+        height: 30px;
+    }
+}
+
+/* From 320px and up - covers legacy small smartphones (old iPhones, etc.) */
+@media (min-width: 320px) {
+    .scroll-container {
+        height: 30px;
+    }
+
+}
+  
+/* From 360px and up - extremely common Android phone width */
+@media (min-width: 360px) {
+/* Styles for >=360px screens */
+    .scroll-container {
+        height: 30px;
+    }
+
+}
+
+/* From 375px and up - standard iPhone sizes */
+@media (min-width: 375px) {
+/* Styles for >=375px screens */
+
+}
+
+/* From 390px and up - newer iPhones and foldable covers */
+@media (min-width: 390px) {
+/* Styles for >=390px screens */
+    .scroll-container {
+        height: 35px;
+    }
+
+}
+
+/* From 414px and up - older Plus/Max iPhones 
+    You could also jump directly to 428px to cover the latest largest iPhones */
+@media (min-width: 414px) {
+/* Styles for >=414px screens */
+    .scroll-container {
+        height: 40px;
+    }
+
+}
+
+/* From 428px and up - largest modern iPhone Max/Plus models */
+@media (min-width: 428px) {
+    .scroll-container {
+        height: 40px;
+    }
+
+}
+
+/* From 600px and up - foldable main displays or small tablets */
+@media (min-width: 600px) {
+    .scroll-container {
+        height: 50px;
+    }
+
+}
+
+/* Desktop Nav 
+Small screens, laptops */
+@media(min-width: 769px){
+    .scroll-container {
+        height: 55px;
+    }
+
+}
+
+/* Desktop, large screens 720p*/
+@media(min-width: 1025px){
+    .scroll-container {
+        height: 60px;
+    }
+
+}
+
+/* Extra large screens, 1080p */
+@media(min-width: 1200px){
+    .scroll-container {
+        height: 65px;
+    }
+
+}
+
+
+#backToTop {
+
+    bottom: 100px; /* Піднімаємо на 100px від кнопки музики */
+
+
+
+}
+

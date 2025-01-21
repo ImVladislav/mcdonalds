@@ -1,0 +1,36 @@
+/* Gallery (Swiper) Styles */
+.three-galleries-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Optional spacing between galleries */
+}
+
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.gallery-slide {
+    flex-shrink: 0;
+    width: 300px; /* Choose a suitable width */
+}
+
+
+.gallery-slide img {
+    width: 85%;
+    height: auto;
+}
+
+/* Swiper navigation buttons and pagination (optional) */
+.gallery-button-prev, .gallery-button-next {
+    color: #000;
+}
+  
+  /* Adjust these styles as needed to fit into your existing responsive design and theme */
+  
