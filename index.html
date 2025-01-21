@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +18,999 @@
     <!-- Title -->
     <title>MCDONALD - Hide the Pain</title>
     <style>
-        @font-face{font-family:'HaroldFont';src:url('fonts/junegull-rg.ttf') format('truetype');font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:'HaroldFont2';src:url('fonts/KatahdinRound-Bold.ttf') format('truetype');font-weight:normal;font-style:normal;font-display:swap}html{font-family:'HaroldFont2',sans-serif;font-size:16px;margin:0;padding:0;max-width:100%;min-height:100%;height:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}text{font-family:'HaroldFont',sans-serif}body{max-width:100%;min-height:100%;height:100%;position:relative;z-index:0;margin:0;padding:0;background-color:#38A6DF}#startcontent{position:relative;padding-top:80px;background-image:url(img/Background/Matiz_Saturacao-1.webp);background-repeat:no-repeat;background-size:cover;margin:0;width:100%;min-height:100%}#maincontent{max-width:100%;min-height:100vh;height:100%;display:flex;flex-direction:column}.imgbkg{background-image:url(img/Background/Efeito.png);background-repeat:no-repeat;background-size:100% 100%}.content{max-width:100%;min-height:100%;height:100%;position:relative;z-index:2}.content img{max-width:100%;height:auto;display:block}.headers{fill:#fbdb2c;stroke:black;stroke-width:2;dominant-baseline:middle;text-anchor:middle}#banner{display:flex;flex-direction:column;height:auto}#bannerimg{justify-items:center}#bannerimg picture{display:flex;justify-content:center;align-items:center}#bannerbtns{display:flex}#aboutus{display:flex;flex-direction:column;align-items:center}#aboutus p{color:#FFF}#aboutus img{width:100%}.back-to-top{position:fixed;bottom:20px;right:20px;width:50px;height:50px;background-color:#fbdb2c;color:#000;border:2px solid #000;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:1.75rem;box-shadow:0px 4px 6px rgba(0,0,0,0.2);opacity:0;visibility:hidden;z-index:1000}@media (min-width:230px){html{font-size:12px}#h_aboutus{font-size:6rem}.content{padding:0 15px 50px 15px}.content>div{padding:15px 0 15px 0}#maincontent{padding-top:150px}#banner{width:85%;padding:0 7.5% 0 7.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:column}#aboutus>div{width:75%;padding:0 20px 0 20px}}@media (min-width:320px){html{font-size:12px}#h_aboutus{font-size:6rem}.content{padding:0 15px 50px 15px}.content>div{padding:15px 0 15px 0}#maincontent{padding-top:150px}#banner{width:85%;padding:0 7.5% 0 7.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:column}#aboutus>div{width:75%;padding:0 20px 0 20px}}@media (min-width:375px){#h_aboutus{font-size:5.75rem}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:column}#aboutus>div{width:75%;padding:0 20px 0 20px}}@media (min-width:390px){#banner{width:85%;padding:0 7.5% 0 7.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:column}#aboutus>div{width:75%;padding:0 20px 0 20px}}@media (min-width:414px){html{font-size:12px}.content{padding:0 20px 75px 20px}.content>div{padding:20px 0 20px 0}#maincontent{padding-top:150px}#banner{width:75%;padding:0 12.5% 0 12.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:column}#aboutus>div{width:75%;padding:0 20px 0 20px}}@media (min-width:428px){html{font-size:12px}.content{padding:0 25px 75px 25px}.content>div{padding:25px 0 25px 0}#maincontent{padding-top:150px}#banner{width:75%;padding:0 12.5% 0 12.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:column}#aboutus>div{width:75%;padding:0 20px 0 20px}}@media (min-width:600px){html{font-size:14px}.content{padding:0 5% 100px 5%}.content>div{padding:25px 0 25px 0}#maincontent{padding-top:100px}#banner{width:75%;padding:0 12.5% 0 12.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:column}#aboutus>div{width:75%;padding:0 20px 0 20px}}@media (min-width:769px){.content{padding:0 10% 125px 10%}.content>div{padding:0 25px 0 25px}#maincontent{padding-top:150px}#banner{width:45%;padding:0 27.5% 0 27.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:row}#aboutus>div{width:50%;padding:0 20px 0 20px}}@media (min-width:1025px){html{font-size:16px}#h_aboutus{font-size:4.5rem}.content{padding:0 15% 150px 15%}.content>div{padding:0 50px 0 50px}#maincontent{padding-top:150px}#banner{width:45%;padding:0 27.5% 0 27.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}#aboutus{flex-direction:row}#aboutus>div{width:50%;padding:0 20px 0 20px}}@media (min-width:1200px){html{font-size:18px}.content{padding:0 20% 150px 20%}.content>div{padding:0 50px 0 50px}#maincontent{padding-top:150px}#banner{width:35%;padding:0 32.5% 0 32.5%}#bannerimg{width:90%;padding:5%}#bannerbtns{width:75%;padding:20px 12.5% 20px 12.5%}#bannerbtns>div{width:50%;padding:0 10px 0 10px}}.navbar{display:flex;justify-content:center;font-family:'HaroldFont',sans-serif}.navbar>div{min-height:80px}.navbar ul{margin:0;padding:0}.navbar ul li{display:flex;list-style:none;justify-content:center;align-items:center;margin:0;padding:10px}.navbar a{text-decoration:none;color:inherit}.navbar img{height:100%;width:auto;display:block}#navbar{display:flex;align-items:flex-start;width:100%;box-sizing:border-box;position:absolute;top:0;left:0;z-index:10}#logo{height:86px;flex-shrink:0}#navlinks{display:flex;flex:1;max-width:560px;align-items:center;text-align:center;justify-content:center;background-color:#fbdb2c;border:3px solid black;border-radius:22px;box-shadow:inset 5px -8px 5px rgb(205 123 38);box-sizing:border-box}#socials{flex:0 0 10%}#socials>div{width:60px;height:80px;display:flex;background-color:#fbdb2c;border:3px solid black;border-radius:22px;box-shadow:inset 5px -8px 5px rgb(205 123 38);align-items:center;text-align:center;justify-content:center}.menu-toggle{width:40px;height:30px;display:flex;flex-direction:column;justify-content:space-between;position:relative}.menu-toggle span{display:block;height:5px;background-color:black;border-radius:5px}@media (min-width:230px){#mobilemenubtn{display:flex;margin-top:25px;margin-bottom:25px}.navbar{width:100%;padding-top:25px;padding-bottom:10px}.navbar ul{display:none;flex-direction:column;font-size:2.5rem}.navbar ul li{height:45px}#msocialx svg,#msocialtg svg,#msocialtk svg{width:1.5em;height:1.5em;margin-left:10px;margin-right:10px}#navlinks{flex-direction:column}#navbar>div{padding:0;margin-left:10px;margin-right:10px}#logo,#socials{display:none}#msocials{display:flex;flex-direction:row;justify-content:center}#msocialx,#msocialtg,#msocialtk{display:flex}#socials>div{padding-left:10px;padding-right:10px}}@media (min-width:320px){#mobilemenubtn{display:flex;margin-top:25px;margin-bottom:25px}.navbar{width:100%;padding-top:25px;padding-bottom:10px}.navbar ul{display:none;flex-direction:column;font-size:2.5rem}.navbar ul li{height:45px}#msocialx svg,#msocialtg svg,#msocialtk svg{width:1.5em;height:1.5em;margin-left:10px;margin-right:10px}#navlinks{flex-direction:column}#navbar>div{padding:0;margin-left:10px;margin-right:10px}#logo,#socials{display:none}#msocials{display:flex;flex-direction:row;justify-content:center}#msocialx,#msocialtg,#msocialtk{display:flex}#socials>div{padding-left:10px;padding-right:10px}}@media (min-width:600px){#logo{display:block}.navbar ul{font-size:2rem}#msocialx,#msocialtg,#msocialtk{display:none}#socials svg{width:2.5rem;height:2.5rem;margin-left:10px;margin-right:10px}#socials{display:flex}#socials>div{margin:0 5px 0 5px}}@media (min-width:769px){#mobilemenubtn{display:none}.navbar{width:100%;padding-top:45px;padding-bottom:15px}.navbar ul{display:flex;flex-direction:row;font-size:1rem}#navlinks{flex-direction:row}#navbar{align-items:stretch;padding-left:20px;padding-right:20px;gap:20px}#navbar>div{padding:0 15px 0 15px;margin-left:0;margin-right:0}#socials>div{padding:0 5px 0 5px}}@media (min-width:1025px){#navbar>div{padding:0 25px 0 25px}#socials>div{padding:0 10px 0 10px}}.scroll-container{width:99%;font-family:'HaroldFont',sans-serif;overflow:hidden;white-space:nowrap;border:3px solid black;transform-origin:center;position:absolute;display:flex;align-items:center;z-index:1}.first-container{background-color:#fbdb2c;transform:rotate(-2deg)}.second-container{background-color:#FFF4B9;transform:rotate(2deg)}.scroll-text{display:inline-block;font-size:2rem;color:#000;line-height:55px;animation:scroll-horizontal 30s linear infinite}@keyframes scroll-horizontal{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}@media (min-width:230px){.scroll-container{height:30px}}@media (min-width:320px){.scroll-container{height:30px}}@media (min-width:360px){.scroll-container{height:30px}}@media (min-width:390px){.scroll-container{height:35px}}@media (min-width:414px){.scroll-container{height:40px}}@media (min-width:428px){.scroll-container{height:40px}}@media (min-width:600px){.scroll-container{height:50px}}@media (min-width:769px){.scroll-container{height:55px}}@media (min-width:1025px){.scroll-container{height:60px}}@media (min-width:1200px){.scroll-container{height:65px}}
+        @font-face {
+            font-family: 'HaroldFont';
+            src: url('fonts/junegull-rg.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: 'HaroldFont2';
+            src: url('fonts/KatahdinRound-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap
+        }
+
+        html {
+            font-family: 'HaroldFont2', sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            min-height: 100%;
+            height: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        text {
+            font-family: 'HaroldFont', sans-serif
+        }
+
+        body {
+            max-width: 100%;
+            min-height: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 0;
+            margin: 0;
+            padding: 0;
+            background-color: #38A6DF
+        }
+
+        #startcontent {
+            position: relative;
+            padding-top: 80px;
+            background-image: url(img/Background/Matiz_Saturacao-1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            width: 100%;
+            min-height: 100%
+        }
+
+        #maincontent {
+            max-width: 100%;
+            min-height: 100vh;
+            height: 100%;
+            display: flex;
+            flex-direction: column
+        }
+
+        .imgbkg {
+            background-image: url(img/Background/Efeito.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+        }
+
+        .content {
+            max-width: 100%;
+            min-height: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block
+        }
+
+        .headers {
+            fill: #fbdb2c;
+            stroke: black;
+            stroke-width: 2;
+            dominant-baseline: middle;
+            text-anchor: middle
+        }
+
+        #banner {
+            display: flex;
+            flex-direction: column;
+            height: auto
+        }
+
+        #bannerimg {
+            justify-items: center
+        }
+
+        #bannerimg picture {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        #bannerbtns {
+            display: flex
+        }
+
+        #aboutus {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        #aboutus p {
+            color: #FFF
+        }
+
+        #aboutus img {
+            width: 100%
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #fbdb2c;
+            color: #000;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.75rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000
+        }
+
+        @media (min-width:230px) {
+            html {
+                font-size: 12px
+            }
+
+            #h_aboutus {
+                font-size: 6rem
+            }
+
+            .content {
+                padding: 0 15px 50px 15px
+            }
+
+            .content>div {
+                padding: 15px 0 15px 0
+            }
+
+            #maincontent {
+                padding-top: 150px
+            }
+
+            #banner {
+                width: 85%;
+                padding: 0 7.5% 0 7.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: column
+            }
+
+            #aboutus>div {
+                width: 75%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:320px) {
+            html {
+                font-size: 12px
+            }
+
+            #h_aboutus {
+                font-size: 6rem
+            }
+
+            .content {
+                padding: 0 15px 50px 15px
+            }
+
+            .content>div {
+                padding: 15px 0 15px 0
+            }
+
+            #maincontent {
+                padding-top: 150px
+            }
+
+            #banner {
+                width: 85%;
+                padding: 0 7.5% 0 7.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: column
+            }
+
+            #aboutus>div {
+                width: 75%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:375px) {
+            #h_aboutus {
+                font-size: 5.75rem
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: column
+            }
+
+            #aboutus>div {
+                width: 75%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:390px) {
+            #banner {
+                width: 85%;
+                padding: 0 7.5% 0 7.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: column
+            }
+
+            #aboutus>div {
+                width: 75%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:414px) {
+            html {
+                font-size: 12px
+            }
+
+            .content {
+                padding: 0 20px 75px 20px
+            }
+
+            .content>div {
+                padding: 20px 0 20px 0
+            }
+
+            #maincontent {
+                padding-top: 150px
+            }
+
+            #banner {
+                width: 75%;
+                padding: 0 12.5% 0 12.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: column
+            }
+
+            #aboutus>div {
+                width: 75%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:428px) {
+            html {
+                font-size: 12px
+            }
+
+            .content {
+                padding: 0 25px 75px 25px
+            }
+
+            .content>div {
+                padding: 25px 0 25px 0
+            }
+
+            #maincontent {
+                padding-top: 150px
+            }
+
+            #banner {
+                width: 75%;
+                padding: 0 12.5% 0 12.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: column
+            }
+
+            #aboutus>div {
+                width: 75%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:600px) {
+            html {
+                font-size: 14px
+            }
+
+            .content {
+                padding: 0 5% 100px 5%
+            }
+
+            .content>div {
+                padding: 25px 0 25px 0
+            }
+
+            #maincontent {
+                padding-top: 100px
+            }
+
+            #banner {
+                width: 75%;
+                padding: 0 12.5% 0 12.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: column
+            }
+
+            #aboutus>div {
+                width: 75%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:769px) {
+            .content {
+                padding: 0 10% 125px 10%
+            }
+
+            .content>div {
+                padding: 0 25px 0 25px
+            }
+
+            #maincontent {
+                padding-top: 150px
+            }
+
+            #banner {
+                width: 45%;
+                padding: 0 27.5% 0 27.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: row
+            }
+
+            #aboutus>div {
+                width: 50%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:1025px) {
+            html {
+                font-size: 16px
+            }
+
+            #h_aboutus {
+                font-size: 4.5rem
+            }
+
+            .content {
+                padding: 0 15% 150px 15%
+            }
+
+            .content>div {
+                padding: 0 50px 0 50px
+            }
+
+            #maincontent {
+                padding-top: 150px
+            }
+
+            #banner {
+                width: 45%;
+                padding: 0 27.5% 0 27.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+
+            #aboutus {
+                flex-direction: row
+            }
+
+            #aboutus>div {
+                width: 50%;
+                padding: 0 20px 0 20px
+            }
+        }
+
+        @media (min-width:1200px) {
+            html {
+                font-size: 18px
+            }
+
+            .content {
+                padding: 0 20% 150px 20%
+            }
+
+            .content>div {
+                padding: 0 50px 0 50px
+            }
+
+            #maincontent {
+                padding-top: 150px
+            }
+
+            #banner {
+                width: 35%;
+                padding: 0 32.5% 0 32.5%
+            }
+
+            #bannerimg {
+                width: 90%;
+                padding: 5%
+            }
+
+            #bannerbtns {
+                width: 75%;
+                padding: 20px 12.5% 20px 12.5%
+            }
+
+            #bannerbtns>div {
+                width: 50%;
+                padding: 0 10px 0 10px
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            font-family: 'HaroldFont', sans-serif
+        }
+
+        .navbar>div {
+            min-height: 80px
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding: 0
+        }
+
+        .navbar ul li {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 10px
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .navbar img {
+            height: 100%;
+            width: auto;
+            display: block
+        }
+
+        #navbar {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10
+        }
+
+        #logo {
+            height: 86px;
+            flex-shrink: 0
+        }
+
+        #navlinks {
+            display: flex;
+            flex: 1;
+            max-width: 560px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-color: #fbdb2c;
+            border: 3px solid black;
+            border-radius: 22px;
+            box-shadow: inset 5px -8px 5px rgb(205 123 38);
+            box-sizing: border-box
+        }
+
+        #socials {
+            flex: 0 0 10%
+        }
+
+        #socials>div {
+            width: 60px;
+            height: 80px;
+            display: flex;
+            background-color: #fbdb2c;
+            border: 3px solid black;
+            border-radius: 22px;
+            box-shadow: inset 5px -8px 5px rgb(205 123 38);
+            align-items: center;
+            text-align: center;
+            justify-content: center
+        }
+
+        .menu-toggle {
+            width: 40px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative
+        }
+
+        .menu-toggle span {
+            display: block;
+            height: 5px;
+            background-color: black;
+            border-radius: 5px
+        }
+
+        @media (min-width:230px) {
+            #mobilemenubtn {
+                display: flex;
+                margin-top: 25px;
+                margin-bottom: 25px
+            }
+
+            .navbar {
+                width: 100%;
+                padding-top: 25px;
+                padding-bottom: 10px
+            }
+
+            .navbar ul {
+                display: none;
+                flex-direction: column;
+                font-size: 2.5rem
+            }
+
+            .navbar ul li {
+                height: 45px
+            }
+
+            #msocialx svg,
+            #msocialtg svg,
+            #msocialtk svg {
+                width: 1.5em;
+                height: 1.5em;
+                margin-left: 10px;
+                margin-right: 10px
+            }
+
+            #navlinks {
+                flex-direction: column
+            }
+
+            #navbar>div {
+                padding: 0;
+                margin-left: 10px;
+                margin-right: 10px
+            }
+
+            #logo,
+            #socials {
+                display: none
+            }
+
+            #msocials {
+                display: flex;
+                flex-direction: row;
+                justify-content: center
+            }
+
+            #msocialx,
+            #msocialtg,
+            #msocialtk {
+                display: flex
+            }
+
+            #socials>div {
+                padding-left: 10px;
+                padding-right: 10px
+            }
+        }
+
+        @media (min-width:320px) {
+            #mobilemenubtn {
+                display: flex;
+                margin-top: 25px;
+                margin-bottom: 25px
+            }
+
+            .navbar {
+                width: 100%;
+                padding-top: 25px;
+                padding-bottom: 10px
+            }
+
+            .navbar ul {
+                display: none;
+                flex-direction: column;
+                font-size: 2.5rem
+            }
+
+            .navbar ul li {
+                height: 45px
+            }
+
+            #msocialx svg,
+            #msocialtg svg,
+            #msocialtk svg {
+                width: 1.5em;
+                height: 1.5em;
+                margin-left: 10px;
+                margin-right: 10px
+            }
+
+            #navlinks {
+                flex-direction: column
+            }
+
+            #navbar>div {
+                padding: 0;
+                margin-left: 10px;
+                margin-right: 10px
+            }
+
+            #logo,
+            #socials {
+                display: none
+            }
+
+            #msocials {
+                display: flex;
+                flex-direction: row;
+                justify-content: center
+            }
+
+            #msocialx,
+            #msocialtg,
+            #msocialtk {
+                display: flex
+            }
+
+            #socials>div {
+                padding-left: 10px;
+                padding-right: 10px
+            }
+        }
+
+        @media (min-width:600px) {
+            #logo {
+                display: block
+            }
+
+            .navbar ul {
+                font-size: 2rem
+            }
+
+            #msocialx,
+            #msocialtg,
+            #msocialtk {
+                display: none
+            }
+
+            #socials svg {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-left: 10px;
+                margin-right: 10px
+            }
+
+            #socials {
+                display: flex
+            }
+
+            #socials>div {
+                margin: 0 5px 0 5px
+            }
+        }
+
+        @media (min-width:769px) {
+            #mobilemenubtn {
+                display: none
+            }
+
+            .navbar {
+                width: 100%;
+                padding-top: 45px;
+                padding-bottom: 15px
+            }
+
+            .navbar ul {
+                display: flex;
+                flex-direction: row;
+                font-size: 1rem
+            }
+
+            #navlinks {
+                flex-direction: row
+            }
+
+            #navbar {
+                align-items: stretch;
+                padding-left: 20px;
+                padding-right: 20px;
+                gap: 20px
+            }
+
+            #navbar>div {
+                padding: 0 15px 0 15px;
+                margin-left: 0;
+                margin-right: 0
+            }
+
+            #socials>div {
+                padding: 0 5px 0 5px
+            }
+        }
+
+        @media (min-width:1025px) {
+            #navbar>div {
+                padding: 0 25px 0 25px
+            }
+
+            #socials>div {
+                padding: 0 10px 0 10px
+            }
+        }
+
+        .scroll-container {
+            width: 99%;
+            font-family: 'HaroldFont', sans-serif;
+            overflow: hidden;
+            white-space: nowrap;
+            border: 3px solid black;
+            transform-origin: center;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            z-index: 1
+        }
+
+        .first-container {
+            background-color: #fbdb2c;
+            transform: rotate(-2deg)
+        }
+
+        .second-container {
+            background-color: #FFF4B9;
+            transform: rotate(2deg)
+        }
+
+        .scroll-text {
+            display: inline-block;
+            font-size: 2rem;
+            color: #000;
+            line-height: 55px;
+            animation: scroll-horizontal 30s linear infinite
+        }
+
+        @keyframes scroll-horizontal {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(-100%)
+            }
+        }
+
+        @media (min-width:230px) {
+            .scroll-container {
+                height: 30px
+            }
+        }
+
+        @media (min-width:320px) {
+            .scroll-container {
+                height: 30px
+            }
+        }
+
+        @media (min-width:360px) {
+            .scroll-container {
+                height: 30px
+            }
+        }
+
+        @media (min-width:390px) {
+            .scroll-container {
+                height: 35px
+            }
+        }
+
+        @media (min-width:414px) {
+            .scroll-container {
+                height: 40px
+            }
+        }
+
+        @media (min-width:428px) {
+            .scroll-container {
+                height: 40px
+            }
+        }
+
+        @media (min-width:600px) {
+            .scroll-container {
+                height: 50px
+            }
+        }
+
+        @media (min-width:769px) {
+            .scroll-container {
+                height: 55px
+            }
+        }
+
+        @media (min-width:1025px) {
+            .scroll-container {
+                height: 60px
+            }
+        }
+
+        @media (min-width:1200px) {
+            .scroll-container {
+                height: 65px
+            }
+        }
     </style>
     <!-- CSS Styles -->
-    <link rel="preload" href="ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="ajax/libs/normalize/8.0.1/normalize.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/navstyles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="npm/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="npm/swiper/swiper-bundle.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/scrollstyles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/footerstyles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/gallery.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -43,119 +1029,138 @@
     <meta name="viewport" content="width=device-width,user-scalable=no">
 
 </head>
+
 <body>
     <div>
-    <div id="navbar" class="navbar">
-                <div id="logo" class="hover-effect">
-                    <picture>
-                        <!-- Desktop and Tablet Screens -->
-                        <source srcset="img/Logo/cropped-Logo-Head-180x180.png" media="(min-width: 600px)">
-                        <!-- Placeholder for small screens -->
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Logo" width="86" height="86">
-                    </picture>
-                </div>
-                <div id="navlinks">
-                    <div id="mobilemenubtn" class="menu-toggle" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul>
-                        <li class="hover-effect"><a href="#aboutus">About</a></li>
-                        <li class="hover-effect"><a href="#exchanges">Exchanges</a></li>
-                        <li class="hover-effect"><a href="#howtobuy">How To Buy</a></li>
-                        <li class="hover-effect"><a href="#tokenomics">Tokenomics</a></li>
-                        <div id="msocials">
-                            <li id="msocialx">
-                                <a href="https://x.com/HaroldSolMeme">
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewbox="0 0 24 24">
-                                        <path d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z"></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li id="msocialtg">
-                                <a href="https://t.me/RealHaroldCoin">
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewbox="0 0 50 50">
-                                        <path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li id="msocialtk">
-                                <a href="https://www.tiktok.com/@realharoldcoin">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                        <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"></path>
-                                    </svg>
-                                </a>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-                <div id="socials">
-                    <div id="xsocial" class="hover-effect"><a href="https://x.com/HaroldSolMeme">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewbox="0 0 24 24">
-                            <path d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z"></path>
-                        </svg>
-                    </a></div>
-                    <div id="telegramsocial" class="hover-effect"><a href="https://t.me/RealHaroldCoin">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewbox="0 0 50 50">
-                            <path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"></path>
-                        </svg>
-                    </a></div>
-                    <div class="hover-effect"><a href="https://www.tiktok.com/@realharoldcoin">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"></path>
-                        </svg>
-                    </a></div>
-                </div>
+        <div id="navbar" class="navbar">
+            <div id="logo" class="hover-effect">
+                <picture>
+                    <!-- Desktop and Tablet Screens -->
+                    <source srcset="img/Logo/cropped-Logo-Head-180x180.png" media="(min-width: 600px)">
+                    <!-- Placeholder for small screens -->
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Logo" width="86" height="86">
+                </picture>
             </div>
+            <div id="navlinks">
+                <div id="mobilemenubtn" class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li class="hover-effect"><a href="#aboutus">About</a></li>
+                    <li class="hover-effect"><a href="#exchanges">Exchanges</a></li>
+                    <li class="hover-effect"><a href="#howtobuy">How To Buy</a></li>
+                    <li class="hover-effect"><a href="#tokenomics">Tokenomics</a></li>
+                    <div id="msocials">
+                        <li id="msocialx">
+                            <a href="https://x.com/HaroldSolMeme">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                    viewbox="0 0 24 24">
+                                    <path
+                                        d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li id="msocialtg">
+                            <a href="https://t.me/RealHaroldCoin">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                    viewbox="0 0 50 50">
+                                    <path
+                                        d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li id="msocialtk">
+                            <a href="https://www.tiktok.com/@realharoldcoin">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div id="socials">
+                <div id="xsocial" class="hover-effect"><a href="https://x.com/HaroldSolMeme">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewbox="0 0 24 24">
+                            <path
+                                d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z">
+                            </path>
+                        </svg>
+                    </a></div>
+                <div id="telegramsocial" class="hover-effect"><a href="https://t.me/RealHaroldCoin">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewbox="0 0 50 50">
+                            <path
+                                d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z">
+                            </path>
+                        </svg>
+                    </a></div>
+                <div class="hover-effect"><a href="https://www.tiktok.com/@realharoldcoin">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewbox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z">
+                            </path>
+                        </svg>
+                    </a></div>
+            </div>
+        </div>
         <div id="startcontent">
 
             <div id="banner" class="content">
                 <div id="bannerimg">
-                <picture id="banner-picture">
-                    <!-- Small screen -->
-                    <source srcset="img/Banners/HAROLD-1-300x281.png" media="(max-width: 600px)">
-                    <!-- Medium screen -->
-                    <source srcset="img/Banners/HAROLD-1-768x718.png" media="(max-width: 1024px)">
-                    <!-- Large screen -->
-                    <source srcset="img/Banners/HAROLD-1-1024x958.png" media="(max-width: 1440px)">
-                    <!-- Extra-large screen -->
-                    <source srcset="img/Banners/HAROLD-1.webp" media="(min-width: 1441px)">
-                    <!-- Default fallback -->
-                    <img class="hover-effect" src="img/Banners/HAROLD-1.webp" alt="Banner Image" loading="eager">
-                </picture>
+                    <picture id="banner-picture">
+                        <!-- Small screen -->
+                        <!-- <source srcset="img/Banners/HAROLD-1-300x281.png" media="(max-width: 600px)"> -->
+                        <!-- Medium screen -->
+                        <!-- <source srcset="img/Banners/HAROLD-1-768x718.png" media="(max-width: 1024px)"> -->
+                        <!-- Large screen -->
+                        <source srcset="/HAROLD-1.png">
+                        <!-- Extra-large screen -->
+                        <source srcset="img/Banners/HAROLD-1.png" media="(min-width: 1441px)">
+                        <!-- Default fallback -->
+                        <img class="hover-effect" src="img/Banners/HAROLD-12.png" alt="Banner Image" loading="eager">
+                    </picture>
                 </div>
                 <div id="bannerbtns">
                     <div id="buynowbtn" class="hover-effect">
                         <a href="https://jup.ag/swap/SOL-3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt">
-                        <picture id="buy-now-picture">
-                            <!-- Small screen -->
-                            <source srcset="img/BuyNow/BUY-NOW-BUTTON-300x96.png" media="(max-width: 600px)">
-                            <!-- Medium screen -->
-                            <source srcset="img/BuyNow/BUY-NOW-BUTTON-768x246.png" media="(max-width: 1024px)">
-                            <!-- Large screen -->
-                            <source srcset="img/BuyNow/BUY-NOW-BUTTON-1024x328.png" media="(max-width: 1440px)">
-                            <!-- Extra-large screen -->
-                            <source srcset="img/BuyNow/BUY-NOW-BUTTON-2048x656.png" media="(min-width: 1441px)">
-                            <!-- Default fallback -->
-                            <img src="img/BuyNow/BUY-NOW-BUTTON-2048x656.png" alt="Buy Now Button" loading="eager">
-                        </picture>
+                            <picture id="buy-now-picture">
+                                <!-- Small screen -->
+                                <source srcset="img/BuyNow/BUY-NOW-BUTTON-300x96.png" media="(max-width: 600px)">
+                                <!-- Medium screen -->
+                                <source srcset="img/BuyNow/BUY-NOW-BUTTON-768x246.png" media="(max-width: 1024px)">
+                                <!-- Large screen -->
+                                <source srcset="img/BuyNow/BUY-NOW-BUTTON-1024x328.png" media="(max-width: 1440px)">
+                                <!-- Extra-large screen -->
+                                <source srcset="img/BuyNow/BUY-NOW-BUTTON-2048x656.png" media="(min-width: 1441px)">
+                                <!-- Default fallback -->
+                                <img src="img/BuyNow/BUY-NOW-BUTTON-2048x656.png" alt="Buy Now Button" loading="eager">
+                            </picture>
                         </a>
                     </div>
                     <div id="chartbtn" class="hover-effect">
                         <a href="https://dexscreener.com/solana/3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt">
-                        <picture id="chart-button-picture">
-                            <!-- Small screen -->
-                            <source srcset="img/Chart/CHART-BUTTON-300x96.png" media="(max-width: 600px)">
-                            <!-- Medium screen -->
-                            <source srcset="img/Chart/CHART-BUTTON-768x246.png" media="(max-width: 1024px)">
-                            <!-- Large screen -->
-                            <source srcset="img/Chart/CHART-BUTTON-1024x328.png" media="(max-width: 1440px)">
-                            <!-- Extra-large screen -->
-                            <source srcset="img/Chart/CHART-BUTTON-2048x656.png" media="(min-width: 1441px)">
-                            <!-- Default fallback -->
-                            <img src="img/Chart/CHART-BUTTON-2048x656.png" alt="Chart Button" loading="eager">
-                        </picture>
+                            <picture id="chart-button-picture">
+                                <!-- Small screen -->
+                                <source srcset="img/Chart/CHART-BUTTON-300x96.png" media="(max-width: 600px)">
+                                <!-- Medium screen -->
+                                <source srcset="img/Chart/CHART-BUTTON-768x246.png" media="(max-width: 1024px)">
+                                <!-- Large screen -->
+                                <source srcset="img/Chart/CHART-BUTTON-1024x328.png" media="(max-width: 1440px)">
+                                <!-- Extra-large screen -->
+                                <source srcset="img/Chart/CHART-BUTTON-2048x656.png" media="(min-width: 1441px)">
+                                <!-- Default fallback -->
+                                <img src="img/Chart/CHART-BUTTON-2048x656.png" alt="Chart Button" loading="eager">
+                            </picture>
                         </a>
                     </div>
                 </div>
@@ -164,19 +1169,23 @@
         <div>
             <div class="scroll-container first-container">
                 <div class="scroll-text">
-                    MCDONALD H2IDE THE PAIN • MCDONALD HIDE2 THE PAIN • MCDONALD2 HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN •
+                    From McDonald tu Prezident • MCDONALD HIDE2 THE PAIN • MCDONALD2 HIDE THE PAIN • From McDonald tu
+                    Prezident • From McDonald tu Prezident • From McDonald tu Prezident •
                 </div>
                 <div class="scroll-text">
-                    MCDONALD H2IDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN •
+                    From McDonald tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident • From McDonald
+                    tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident •
                 </div>
             </div>
 
             <div class="scroll-container second-container">
                 <div class="scroll-text">
-                    MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN •
+                    From McDonald tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident • From McDonald
+                    tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident •
                 </div>
                 <div class="scroll-text">
-                    MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN •
+                    From McDonald tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident • From McDonald
+                    tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident •
                 </div>
             </div>
         </div>
@@ -184,52 +1193,56 @@
 
         <div id="maincontent">
             <div id="aboutus" class="content">
-                <div id="aboutusimg" class="imgbkg"><img class="hover-effect" src="img/About/About.png" alt="About Us Image" loading="lazy"></div>
+                <div id="aboutusimg" class="imgbkg"><img class="hover-effect" src="/About.png"
+                        alt="About Us Image" loading="lazy"></div>
                 <div id="aboutuscontent">
-                    <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100" style="width: 100%; height: auto;">
+                    <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100"
+                        style="width: 100%; height: auto;">
                         <text x="50%" y="50%" class="headers" id="h_aboutus">
-                                About
+                            About
                         </text>
                     </svg>
                     <p>
-                        Welcome to <b>$MCDONALD</b>, the memecoin inspired by the iconic internet sensation, <b>MCDONALD “Hide the Pain.”</b> 
-                        Our story is as unique as MCDONALD’s smile. After the project’s original developer executed a rugpull, the resilient MCDONALD 
-                        community stepped up, took control, and turned the situation around. In true MCDONALD fashion, we embraced the pain, 
-                        hid it with a grin, and transformed <b>$MCDONALD</b> into a symbol of resilience and humor.
+                        Once upon a Big Mac, Tromp was flippin’ burgirs at a lil’ ol’ Micky D’s in New Yark. Every
+                        mornin’, he wuld march in wid his MAGA (Make All Grills Awsome) hat, wavin’ like he own’d the
+                        joint. Tromp wuz da king of fryers, spinnin’ McNuggies like a DJ droppin’ beats. Legend says he
+                        invented da “Tremp Double Deluxe” burger, wit’ extra ketchup – cuz Tromp nevr does dry burgirs.
                     </p>
                     <p>
-                        Now, <b>$MCDONALD</b> isn’t just a memecoin; it’s a tribute to the unshakable spirit and joy that comes from finding laughter
-                        in life’s challenges. Built by the community, for the community, <b>$MCDONALD</b> represents the strength of coming together, 
-                        even in the face of adversity.
+                        One day, a Kar’n rolled up screamin’ about “TOO MUCH MAYO.” Tromp, wid his trademrk Tremp grin,
+                        sed: “Kar’n, this iz Amerca. U want less mayo, u can build ur own wall of lettuce.” Da entir
+                        store cheered, nd Tromp went viral on MySpase. Soon, he was hostin’ McRallies outside, chantin’
+                        “Big Macs for ALL!” Even da fry kids join’d.
                     </p>
                     <p>
-                        Whether you’re here for the laughs or the financial potential, <b>$MCDONALD</b> brings lightheartedness and unity to the 
-                        world of crypto. <b>Join us as we “hide the pain”</b> and show the world that every setback is just another step toward success!
+                        From flipping patties to flipping votes, Tromp knew his destiny. He traded his spatula 4 da big
+                        chair in DC. “We don’t just serve fries, we serve FREEDOM!” he declared at da inauguration, wid
+                        da McFlag wavin’. Nd thus, da legend of Tromp began – da only prezident who cud cook up policies
+                        nd patties at da same time.
                     </p>
                 </div>
             </div>
             <div id="exchanges" class="content">
-                <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100" style="width: 100%; height: auto;">
-                        <text x="50%" y="50%" class="headers" id="h_exchanges">
-                                Exchanges
-                        </text>
-                    </svg>
+                <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100"
+                    style="width: 100%; height: auto;">
+                    <text x="50%" y="50%" class="headers" id="h_exchanges">
+                        Exchanges
+                    </text>
+                </svg>
                 <ul>
-                    <li class="hover-effect"><a href="https://jup.ag/swap/SOL-3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt"><img src="img/Exchanges/Jupiter.png" alt="Jupiter" loading="lazy"></a></li>
-                    <li class="hover-effect"><a href="https://www.dextools.io/app/en/solana/pair-explorer/7SJ5UKJoqBUGjt1PT7AeSF7FKPgpnxeYMHHcejTiGQzc?t=1732024638657"><img src="img/Exchanges/DexTools.png" alt="Dex Tools" loading="lazy"></a></li>
-                    <li class="hover-effect"><a href="https://dexscreener.com/solana/3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt"><img src="img/Exchanges/DexScreener.png" alt="Dex Screener" loading="lazy"></a></li>
-                    <li class="hover-effect"><a href="https://raydium.io/swap/?inputMint=sol&outputMint=3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt"><img src="img/Exchanges/Raydium.png" alt="Raydium" loading="lazy"></a></li>
-                    <li class="hover-effect"><a href="https://coinmarketcap.com/currencies/harold-sol/"><img src="img/Exchanges/CoinMarketCap.png" alt="Coin Market Cap" loading="lazy"></a></li>
-                    <li class="hover-effect"><a href="https://www.coingecko.com/en/coins/haroldonsol"><img src="img/Exchanges/CoinGecko.png" alt="Coin Gecko" loading="lazy"></a></li>
-                    <li class="hover-effect"><a href="https://www.mexc.com/en-GB/exchange/HAROLD_USDT"><img src="img/Exchanges/mexc.png" alt="MEXC" loading="lazy"></a></li>
-                    <li class="hover-effect">TBA</li>
-                    <li class="hover-effect">TBA</li>
-                </ul>
+                    <li class="hover-effect"><a
+                            href="https://www.dextools.io/app/en/solana/pair-explorer/7SJ5UKJoqBUGjt1PT7AeSF7FKPgpnxeYMHHcejTiGQzc?t=1732024638657"><img
+                                src="img/Exchanges/DexTools.png" alt="Dex Tools" loading="lazy"></a></li>
+                    <li class="hover-effect"><a
+                            href="https://dexscreener.com/solana/3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt"><img
+                                src="img/Exchanges/DexScreener.png" alt="Dex Screener" loading="lazy"></a></li>
+
             </div>
             <div id="howtobuy" class="content">
-                <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100" style="width: 100%; height: auto;">
+                <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100"
+                    style="width: 100%; height: auto;">
                     <text x="50%" y="50%" class="headers" id="h_howtobuy">
-                            How To Buy
+                        How To Buy
                     </text>
                 </svg>
                 <div id="htb-container">
@@ -237,38 +1250,41 @@
                         <div class="htb-line-fill"></div>
                     </div>
                     <div class="htb">
-                        <div class="htbimg hover-effect">    
+                        <div class="htbimg hover-effect">
                             <img src="img/HowToBuy/phantom.jpg" alt="" loading="lazy">
                         </div>
                         <div>
                             <h1>CREATE A WALLET</h1>
-                            <p>Visit phantom.app and follow the simple steps to create a new account with the Phantom app or browser extension.</p>
+                            <p>Visit phantom.app and follow the simple steps to create a new account with the Phantom
+                                app or browser extension.</p>
                         </div>
                         <div id="htb-arrow-1" class="htb-arrow"><i class="fa-solid fa-arrow-down"></i></div>
                     </div>
                     <div class="htb">
-                        <div class="htbimg hover-effect"> 
+                        <div class="htbimg hover-effect">
                             <img src="img/HowToBuy/Solana.webp" alt="" loading="lazy">
                         </div>
                         <div>
                             <h1>GET SOME $SOL</h1>
-                            <p>Tap the BUY button in the app to purchase Solana, or deposit $SOL to your Phantom wallet from the crypto exchange of your choice.</p>
+                            <p>Tap the BUY button in the app to purchase Solana, or deposit $SOL to your Phantom wallet
+                                from the crypto exchange of your choice.</p>
                         </div>
                         <div id="htb-arrow-2" class="htb-arrow"><i class="fa-solid fa-arrow-down"></i></div>
                     </div>
                     <div class="htb">
-                        <div class="htbimg hover-effect"> 
-                            <img src="img/HowToBuy/SwapSol.webp" alt="" loading="lazy">
+                        <div class="htbimg hover-effect">
+                            <img src="4.png" alt="" loading="lazy">
                         </div>
                         <div>
                             <h1>SWAP $SOL</h1>
-                            <p>Tap the SWAP icon in your Phantom wallet and paste the $MCDONALD token address. Swap your $SOL for $MCDONALD</p>
+                            <p>Tap the SWAP icon in your Phantom wallet and paste the $MCDONALD token address. Swap your
+                                $SOL for $MCDONALD</p>
                         </div>
                         <div id="htb-arrow-3" class="htb-arrow"><i class="fa-solid fa-arrow-down"></i></div>
                     </div>
                     <div class="htb">
-                        <div class="htbimg hover-effect"> 
-                            <img src="img/HowToBuy/YouAreHarold.webp" alt="" loading="lazy">
+                        <div class="htbimg hover-effect">
+                            <img src="3.png" alt="" loading="lazy">
                         </div>
                         <div>
                             <h1>YOU ARE MCDONALD!</h1>
@@ -280,15 +1296,17 @@
             </div>
             <div id="tokenomics" class="content">
                 <div id="tokenomicsHeading">
-                    <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100" style="width: 100%; height: auto;">
+                    <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100"
+                        style="width: 100%; height: auto;">
                         <text x="50%" y="50%" class="headers" id="h_tokenomics">
-                                Tokenomics
+                            Tokenomics
                         </text>
                     </svg>
                 </div>
                 <div id="tokenomicsContent">
                     <div id="t1" class="imgbkg">
-                        <img class="hover-effect" src="img/Tokenomics/Tokenomics.webp" alt="Tokenomics MCDONALD Image" loading="lazy">
+                        <img class="hover-effect" src="/1.png" alt="Tokenomics MCDONALD Image"
+                            loading="lazy">
                     </div>
 
                     <div id="t2">
@@ -312,134 +1330,18 @@
                             <img src="img/Tokenomics/copy.png" alt="Copy Address" loading="lazy">
                         </div>
                     </div>
-                    <div id="t3">
+                    <!-- <div id="t3">
                         <div class="hover-effect"><img src="img/Tokenomics/supply.png" alt="" loading="lazy"></div>
                         <div class="hover-effect"><img src="img/Tokenomics/tax.png" alt="" loading="lazy"></div>
                         <div class="hover-effect"><img src="img/Tokenomics/network.png" alt="" loading="lazy"></div>
                         <div class="hover-effect"><img src="img/Tokenomics/Lp.png" alt="" loading="lazy"></div>
-                    </div>
+                    </div> -->
                     <div id="t4" class="imgbkg">
-                        <img class="hover-effect" src="img/Tokenomics/Wine.png" alt="" loading="lazy">
+                        <img class="hover-effect" src="2.png" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
-            <div id="stickerpack" class="content">
-                <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100" style="width: 100%; height: auto;">
-                    <text x="50%" y="50%" class="headers" id="h_stickerpack">
-                            Sticker Pack
-                    </text>
-                </svg>
 
-                
-                <!-- Three galleries stacked in a column -->
-                <div class="three-galleries-column">
-
-                    <!-- Gallery 1 -->
-                    <div class="gallery-container">
-                        <div class="swiper-wrapper gallery-wrapper">
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/10-1.webp" alt="Sticker 10-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/11-1.webp" alt="Sticker 11-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/12-1.webp" alt="Sticker 12-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/2-4.webp" alt="Sticker 2-4.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/4-2.webp" alt="Sticker 4-2.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/5-1.webp" alt="Sticker 5-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/6-1.webp" alt="Sticker 6-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/7-1.webp" alt="Sticker 7-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/8-1.webp" alt="Sticker 8-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/1/9-1.webp" alt="Sticker 9-1.webp" loading="lazy">
-                                </div>
-                                                    </div>
-                    </div>
-
-                    <!-- Gallery 2 -->
-                    <div class="gallery-container">
-                        <div class="swiper-wrapper gallery-wrapper">
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/1-5.webp" alt="Sticker 1-5.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/10-3.webp" alt="Sticker 10-3.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/2-6.webp" alt="Sticker 2-6.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/3-5.webp" alt="Sticker 3-5.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/4-4.webp" alt="Sticker 4-4.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/5-3.webp" alt="Sticker 5-3.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/6-3.webp" alt="Sticker 6-3.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/7-3.webp" alt="Sticker 7-3.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/8-3.webp" alt="Sticker 8-3.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/2/9-3.webp" alt="Sticker 9-3.webp" loading="lazy">
-                                </div>
-                                                    </div>
-                    </div>
-
-                    <!-- Gallery 3 -->
-                    <div id="gallery3" class="gallery-container">
-                        <div class="swiper-wrapper gallery-wrapper">
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/11-3.webp" alt="Sticker 11-3.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/12-3.webp" alt="Sticker 12-3.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/13.webp" alt="Sticker 13.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/14-1.webp" alt="Sticker 14-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/15-1.webp" alt="Sticker 15-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/16-1.webp" alt="Sticker 16-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/17-1.webp" alt="Sticker 17-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/18-1.webp" alt="Sticker 18-1.webp" loading="lazy">
-                                </div>
-                                                            <div class="swiper-slide gallery-slide">
-                                    <img class="hover-effect" src="img/StickerPack/3/19-1.webp" alt="Sticker 19-1.webp" loading="lazy">
-                                </div>
-                                                    </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div id="backToTop" class="back-to-top" onclick="scrollToTop()">
@@ -449,52 +1351,56 @@
         <div>
             <div class="scroll-container first-container">
                 <div class="scroll-text">
-                    MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN •
+                    From McDonald tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident • From McDonald
+                    tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident •
                 </div>
                 <div class="scroll-text">
-                    MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN •
+                    From McDonald tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident • From McDonald
+                    tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident •
                 </div>
             </div>
 
             <div class="scroll-container second-container">
                 <div class="scroll-text">
-                    MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN •
+                    From McDonald tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident • From McDonald
+                    tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident •
                 </div>
                 <div class="scroll-text">
-                    MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN • MCDONALD HIDE THE PAIN •
+                    From McDonald tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident • From McDonald
+                    tu Prezident • From McDonald tu Prezident • From McDonald tu Prezident •
                 </div>
             </div>
         </div>
 
-        <div id="footer" class="content"> 
+        <div id="footer" class="content">
             <div id="footerbanner">
-                <img class="hover-effect" src="img/Banners/Harold.png" alt="" loading="lazy">
+                <img class="hover-effect" src="5.png" alt="" loading="lazy">
             </div>
             <div id="footerlinks">
                 <div id="footerlinkstext">
-                    <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100" style="width: 100%; height: auto;">
+                    <svg class="hover-effect" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 100"
+                        style="width: 100%; height: auto;">
                         <text x="50%" y="25%" class="headers" id="h_footer">
-                                Join our community
+                            Join our community
                         </text>
                     </svg>
                 </div>
                 <div id="footerlinkssocials">
-                    <div class="hover-effect"><a href="https://x.com/HaroldSolMeme"><img src="img/Icons/X/social.png" alt="" loading="lazy"></a></div>
-                    <div class="hover-effect"><a href="https://t.me/RealHaroldCoin"><img src="img/Icons/Telegram/Telegram.png" alt="" loading="lazy"></a></div>
-                    <div class="hover-effect"><a href="https://dexscreener.com/solana/3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt"><img src="img/Icons/DexScreener/Dexscreener.png" alt="" loading="lazy"></a></div>
-                    <div class="hover-effect"><a href="https://www.dextools.io/app/en/solana/pair-explorer/3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt"><img src="img/Icons/DexTools/dextools.png" alt="" loading="lazy"></a></div>
+                    <div class="hover-effect"><a href="https://x.com/HaroldSolMeme"><img src="img/Icons/X/social.png"
+                                alt="" loading="lazy"></a></div>
+                    <div class="hover-effect"><a href="https://t.me/RealHaroldCoin"><img
+                                src="img/Icons/Telegram/Telegram.png" alt="" loading="lazy"></a></div>
+                    <div class="hover-effect"><a
+                            href="https://dexscreener.com/solana/3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt"><img
+                                src="img/Icons/DexScreener/Dexscreener.png" alt="" loading="lazy"></a></div>
+                    <div class="hover-effect"><a
+                            href="https://www.dextools.io/app/en/solana/pair-explorer/3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt"><img
+                                src="img/Icons/DexTools/dextools.png" alt="" loading="lazy"></a></div>
                 </div>
             </div>
-        </div> 
-    </div>
-    <div id="copyright">
-        <div id="disclaimer">
-            <p>**By purchasing <b>HAROLD</b> for your portfolio, you are embodying the spirit of hiding the pain through our collective crypto journey. 
-                It holds no intrinsic value or promise of financial return, there is no formal team or roadmap. <b>HAROLD</b> serves as a symbol of 
-                resilience and shared experience in this unique endeavor.</p>
         </div>
-        <div id="cc"><b>© 2024 HAROLD • All Rights Reserved</b></div>
     </div>
+
 
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -520,4 +1426,5 @@
     <script src="js/scrolltotop.js" defer=""></script>
 
 </body>
+
 </html>
